@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="marathonRegistrationFormCss.css" />
+  </head>
+  <body onload="document.regForm.focus()">
+    <form name="regForm" action="#">
+      <h2>Race Registration</h2>
+      <div class="div-inf">
+        <h3>Personal Information</h3>
+        <label class="label-text" for="firstname">First Name:</label>
+        <input
+          onchange="validateLettersInput(event)"
+          class="rounded-input"
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+        />
+        <label class="label-text" for="lastname">Last Name:</label>
+        <input
+          onchange="validateLettersInput(event)"
+          class="rounded-input"
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+        />
+      </div>
+      <div class="div-inf">
+        <h3>Login Information</h3>
+        <label class="label-text" for="email">Email:</label>
+        <input
+          onchange="validateEmail(event)"
+          class="rounded-input"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <label class="label-text" for="password">Password:</label>
+        <input
+          onchange="validatePassword(event)"
+          class="rounded-input"
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+        <input id="showpass" type="checkbox" onclick="togglePassword()" />
+        <label class="show-pass-color" for="showpass">Show Password</label>
+      </div>
+      <div class="radio-style">
+        <h3>Select a Race</h3>
+        <div class="radio-text">
+          <input
+            type="radio"
+            name="racetype"
+            id="funrun"
+            value="funrun"
+            required
+          />
+          <label class="label-text" for="funrun">Fun Run 5k</label>
+        </div>
+        <div class="radio-text">
+          <input
+            type="radio"
+            name="racetype"
+            id="halfmarathon"
+            value="halfmarathon"
+            required
+          />
+          <label class="label-text" for="halfmarathon">Half Marathon</label>
+        </div>
+        <div class="radio-text">
+          <input
+            type="radio"
+            name="racetype"
+            id="fullmarathon"
+            value="fullmarathon"
+            required
+          />
+          <label class="label-text" for="fullmarathon">Full Marathon</label>
+        </div>
+      </div>
+      <div class="select-style">
+        <label class="label-text" for="age">Select Age Group:</label>
+        <select class="rounded-select-input" name="age" id="age">
+          <option value="kids">Under 18</option>
+          <option value="ya">18-30</option>
+          <option value="adults">30-50</option>
+          <option value="seniors">50+</option>
+        </select>
+      </div>
+      <div>
+        <button id="registerButton" class="reg-button">Register!</button>
+      </div>
+      <div id="errorMessage"></div>
+    </form>
+    <script src="marathonRegistrationForm.js"></script>
+  </body>
+</html>

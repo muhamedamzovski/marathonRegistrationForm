@@ -1,0 +1,116 @@
+body {
+  background-color: aqua;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2px;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  text-decoration: underline;
+}
+
+h3 {
+  margin-top: 2px;
+  color: white;
+  text-align: center;
+}
+
+form {
+  background-color: darkcyan;
+  border: 2px solid aqua;
+  border-radius: 25px;
+  box-shadow: 5px 10px #888888;
+  padding: 15px 10px 20px;
+  width: 40%;
+  display: inline-block;
+}
+
+.div-inf {
+  text-align: left;
+  border: 2px solid rgb(27, 53, 53);
+  border-radius: 25px;
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+.rounded-input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 7px;
+  width: 95%;
+  margin-top: 3px;
+  margin-left: 6px;
+}
+
+.rounded-select-input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.reg-button {
+  width: 100%;
+  color: white;
+  background-color: cornflowerblue;
+  border: 3px solid rgb(27, 53, 53);
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 5px;
+  opacity: 0.8;
+}
+
+button:hover:not([disabled]) {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.radio-style {
+  text-align: center;
+  border: 2px solid rgb(27, 53, 53);
+  border-radius: 25px;
+  padding: 10px 5px;
+  margin: 5px 0;
+}
+
+.radio-text {
+  text-align: left;
+  font-size: 18px;
+}
+
+.select-style {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid rgb(27, 53, 53);
+  border-radius: 25px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#age {
+  width: 70%;
+}
+
+.label-text {
+  color: white;
+  font-size: 17px;
+  margin-left: 6px;
+}
+
+.show-pass-color {
+  color: white;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+#errorMessage {
+  color: rgb(124, 20, 20);
+  margin-top: 2px;
+}
